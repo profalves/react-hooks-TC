@@ -1,5 +1,6 @@
 import React, { useState, createContext } from 'react'
 
+// @ts-ignore
 export const TodoContext = createContext()
 
 const TodoProvider = ({ children }) => {
