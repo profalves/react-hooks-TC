@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const list = useState([
+  const list = [
     { id: 1, title: "Tarefa 1", done: true },
     { id: 2, title: "Tarefa 2", done: false },
     { id: 3, title: "Tarefa 3", done: false }
-  ])
+  ]
 
   return (
     <div className="App">
