@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  color: #fff;
+}
+
+.todosList {
+  list-style: none;
+}
+
+input[type="checkbox"] {
+  border: 1px solid #000;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  cursor: pointer;
+  margin: 5px 15px;
+  position: relative;
+}
+
+input[type="text"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  padding: 15px;
+  font-size: 22px;
+  outline: 0;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0;
+  padding: 15px;
+  font-size: 22px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #026;
+}
