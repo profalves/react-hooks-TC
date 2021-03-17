@@ -3,31 +3,19 @@ import './App.css';
 import TodoProvider from './context/TodoContext';
 import TodoList from './components/TodoList';
 import AddTodo from './components/AddTodo';
+import DoneCounter from './components/DoneCounter';
 
 function App() {
-
-  const [total, setTotal] = useState(0)
-
-  const handleInputChanged = (id) => {
-
-  }
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (!e.target[0].value) return;
-
-  }
-
-  useEffect(() => {
-    const doneCounter = list.filter(todo => todo.done)
-    setTotal(doneCounter.length)
-  }, [list])
-
   return (
-    <TodoProvider>
-      <TodoList />
-      <AddTodo />
-    </TodoProvider>
+    <div className="App">
+      <h1>Lista de Tarefas</h1>
+      <TodoProvider>
+        <DoneCounter />
+        <TodoList />
+        <AddTodo />
+      </TodoProvider>
+    </div>
+
   );
 }
 
