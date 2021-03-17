@@ -8,7 +8,7 @@ const DoneCounter = () => {
   useEffect(() => {
     const doneCounter = context.list.filter(todo => todo.done)
     setTotal(doneCounter.length)
-  })
+  }, [context.list])
 
   return (
     <strong>Tarefas concluidas: {total}</strong>
