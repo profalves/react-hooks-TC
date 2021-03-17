@@ -3,9 +3,9 @@ import './App.css';
 
 function App() {
   const [list, setList] = useState([
-    { id: 1, title: "Tarefa 1", done: true },
-    { id: 2, title: "Tarefa 2", done: false },
-    { id: 3, title: "Tarefa 3", done: false }
+    { id: 1, title: "Ir pra academia", done: true },
+    { id: 2, title: "Ir ao Supermercado", done: false },
+    { id: 3, title: "Estudar React", done: false }
   ])
 
   const [total, setTotal] = useState(0)
