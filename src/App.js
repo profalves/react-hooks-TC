@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 
 function App() {
-  const [list, setList] = useState([
+  const list = useState([
     { id: 1, title: "Tarefa 1", done: true },
     { id: 2, title: "Tarefa 2", done: false },
     { id: 3, title: "Tarefa 3", done: false }
